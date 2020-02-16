@@ -1,0 +1,45 @@
+"OBJECTID","ID_0","ISO","NAME_0","ID_1","NAME_1","ID_2","NAME_2","ID_3","NAME_3","TYPE_3","ENGTYPE_3","NL_NAME_3","VARNAME_3"
+1,23,"BEL","Belgium",1,"Bruxelles",1,"Bruxelles",1,"Brussel","Arrondissement","Arrondissement",NA,"Bruxelles"
+2,23,"BEL","Belgium",2,"Vlaanderen",2,"Antwerpen",2,"Antwerpen","Arrondissement","Arrondissement",NA,"Anvers"
+3,23,"BEL","Belgium",2,"Vlaanderen",2,"Antwerpen",3,"Mechelen","Arrondissement","Arrondissement",NA,"Malines"
+4,23,"BEL","Belgium",2,"Vlaanderen",2,"Antwerpen",4,"Turnhout","Arrondissement","Arrondissement",NA,NA
+5,23,"BEL","Belgium",2,"Vlaanderen",3,"Limburg",5,"Hasselt","Arrondissement","Arrondissement",NA,NA
+6,23,"BEL","Belgium",2,"Vlaanderen",3,"Limburg",6,"Maaseik","Arrondissement","Arrondissement",NA,NA
+7,23,"BEL","Belgium",2,"Vlaanderen",3,"Limburg",7,"Tongeren","Arrondissement","Arrondissement",NA,"Tongres"
+8,23,"BEL","Belgium",2,"Vlaanderen",4,"Oost-Vlaanderen",8,"Aalst","Arrondissement","Arrondissement",NA,"Alost"
+9,23,"BEL","Belgium",2,"Vlaanderen",4,"Oost-Vlaanderen",9,"Dendermonde","Arrondissement","Arrondissement",NA,"Termonde"
+10,23,"BEL","Belgium",2,"Vlaanderen",4,"Oost-Vlaanderen",10,"Eeklo","Arrondissement","Arrondissement",NA,NA
+11,23,"BEL","Belgium",2,"Vlaanderen",4,"Oost-Vlaanderen",11,"Gent","Arrondissement","Arrondissement",NA,"Gand"
+12,23,"BEL","Belgium",2,"Vlaanderen",4,"Oost-Vlaanderen",12,"Oudenaarde","Arrondissement","Arrondissement",NA,"Audenarde"
+13,23,"BEL","Belgium",2,"Vlaanderen",4,"Oost-Vlaanderen",13,"Sint-Niklaas","Arrondissement","Arrondissement",NA,"Saint-Nicolas"
+14,23,"BEL","Belgium",2,"Vlaanderen",5,"Vlaams Brabant",14,"Halle-Vilvoorde","Arrondissement","Arrondissement",NA,"Hal-Vilvorde"
+15,23,"BEL","Belgium",2,"Vlaanderen",5,"Vlaams Brabant",15,"Leuven","Arrondissement","Arrondissement",NA,"Louvain"
+16,23,"BEL","Belgium",2,"Vlaanderen",6,"West-Vlaanderen",16,"Brugge","Arrondissement","Arrondissement",NA,"Bruges"
+17,23,"BEL","Belgium",2,"Vlaanderen",6,"West-Vlaanderen",17,"Diksmuide","Arrondissement","Arrondissement",NA,"Dixmude"
+18,23,"BEL","Belgium",2,"Vlaanderen",6,"West-Vlaanderen",18,"Ieper","Arrondissement","Arrondissement",NA,"Ypres"
+19,23,"BEL","Belgium",2,"Vlaanderen",6,"West-Vlaanderen",19,"Kortrijk","Arrondissement","Arrondissement",NA,"Courtrai"
+20,23,"BEL","Belgium",2,"Vlaanderen",6,"West-Vlaanderen",20,"Oostende","Arrondissement","Arrondissement",NA,"Ostende"
+21,23,"BEL","Belgium",2,"Vlaanderen",6,"West-Vlaanderen",21,"Roeselare","Arrondissement","Arrondissement",NA,"Roulers"
+22,23,"BEL","Belgium",2,"Vlaanderen",6,"West-Vlaanderen",22,"Tielt","Arrondissement","Arrondissement",NA,NA
+23,23,"BEL","Belgium",2,"Vlaanderen",6,"West-Vlaanderen",23,"Veurne","Arrondissement","Arrondissement",NA,"Furnes"
+24,23,"BEL","Belgium",3,"Wallonie",7,"Brabant Wallon",24,"Nivelles","Arrondissement","Arrondissement",NA,"Nijvel"
+25,23,"BEL","Belgium",3,"Wallonie",8,"Hainaut",25,"Ath","Arrondissement","Arrondissement",NA,"Aat"
+26,23,"BEL","Belgium",3,"Wallonie",8,"Hainaut",26,"Charleroi","Arrondissement","Arrondissement",NA,NA
+27,23,"BEL","Belgium",3,"Wallonie",8,"Hainaut",27,"Moeskroen","Arrondissement","Arrondissement",NA,"Mouscron"
+28,23,"BEL","Belgium",3,"Wallonie",8,"Hainaut",28,"Mons","Arrondissement","Arrondissement",NA,"Bergen"
+29,23,"BEL","Belgium",3,"Wallonie",8,"Hainaut",29,"Soignies","Arrondissement","Arrondissement",NA,"Zinnik"
+30,23,"BEL","Belgium",3,"Wallonie",8,"Hainaut",30,"Thuin","Arrondissement","Arrondissement",NA,NA
+31,23,"BEL","Belgium",3,"Wallonie",8,"Hainaut",31,"Tournai","Arrondissement","Arrondissement",NA,"Doornik"
+32,23,"BEL","Belgium",3,"Wallonie",9,"Liège",32,"Huy","Arrondissement","Arrondissement",NA,"Hoei"
+33,23,"BEL","Belgium",3,"Wallonie",9,"Liège",33,"Liège","Arrondissement","Arrondissement",NA,"Luik"
+34,23,"BEL","Belgium",3,"Wallonie",9,"Liège",34,"Verviers","Arrondissement","Arrondissement",NA,NA
+35,23,"BEL","Belgium",3,"Wallonie",9,"Liège",35,"Waremme","Arrondissement","Arrondissement",NA,"Borgworm"
+36,23,"BEL","Belgium",3,"Wallonie",10,"Limburg",36,"Hasselt","Arrondissement","Arrondissement",NA,NA
+37,23,"BEL","Belgium",3,"Wallonie",11,"Luxembourg",37,"Arlon","Arrondissement","Arrondissement",NA,"Aarlen"
+38,23,"BEL","Belgium",3,"Wallonie",11,"Luxembourg",38,"Bastogne","Arrondissement","Arrondissement",NA,"Bastenaken"
+39,23,"BEL","Belgium",3,"Wallonie",11,"Luxembourg",39,"Marche-en-Famenne","Arrondissement","Arrondissement",NA,NA
+40,23,"BEL","Belgium",3,"Wallonie",11,"Luxembourg",40,"Neufchâteau","Arrondissement","Arrondissement",NA,NA
+41,23,"BEL","Belgium",3,"Wallonie",11,"Luxembourg",41,"Virton","Arrondissement","Arrondissement",NA,NA
+42,23,"BEL","Belgium",3,"Wallonie",12,"Namur",42,"Dinant","Arrondissement","Arrondissement",NA,NA
+43,23,"BEL","Belgium",3,"Wallonie",12,"Namur",43,"Namur","Arrondissement","Arrondissement",NA,"Namen"
+44,23,"BEL","Belgium",3,"Wallonie",12,"Namur",44,"Philippeville","Arrondissement","Arrondissement",NA,NA
