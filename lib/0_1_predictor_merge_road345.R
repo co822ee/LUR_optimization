@@ -9,7 +9,7 @@ library(pbapply)
 
 
 input_folder <- "../data/predictor_withoutMV/"
-output_folder <- "../data/predictor_withouMV/road_merge_laea/"
+output_folder <- "../data/predictor_withoutMV/road_merge_laea/"
 
 # Raster options for speeding up the computation
 # rasterOptions(chunksize = 5e+15)
@@ -17,6 +17,13 @@ output_folder <- "../data/predictor_withouMV/road_merge_laea/"
 # rasterOptions(memfrac=0.9)
 # rasterOptions(tolerance=0.6)
 # rasterOptions()
+
+if(!dir.exists(input_folder)){
+    dir.create(input_folder)
+}
+if(!dir.exists(output_folder)){
+    dir.create(output_folder)
+}
 
 
 readMapNames <- function(pattern){

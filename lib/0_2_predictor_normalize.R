@@ -19,6 +19,11 @@ output_folder <- "../data/predictor_normalize_area/"
 # rasterOptions()
 # memory.limit(TRUE)
 
+if(!dir.exists(output_folder)){
+    dir.create(output_folder)
+}
+
+
 # write the output maps in the normalize_area folder
 writeRaster_name <- function(r){
     writeRaster(r, filename = paste0(output_folder, 

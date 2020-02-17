@@ -5,7 +5,11 @@ predictor_map <- raster("../data/raw_data/predictor_map/road_class_5_800.map")
 # Intermediate data for processing
 tropomiRaster_filepath <- '../data/TROPOMI_temis_laea/raster'   
 # Final data for the later modeling in PCRaster
-tropomiFinal_filepath <- '../data/TROPOMI_temis_laea'           
+tropomiFinal_filepath <- '../data/TROPOMI_temis_laea'    
+
+if(!dir.exists(tropomiRaster_filepath)){
+    dir.create(tropomiRaster_filepath)
+}
 
 # Setting:
 # original projection: laea
