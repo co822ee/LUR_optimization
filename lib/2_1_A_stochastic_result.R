@@ -80,3 +80,4 @@ write.csv(targetConvObj, '../data/GLUE/onlySensorTrainAll_500.csv', row.names = 
 # 3) For considering only block
 targetConvObj <-  objF_1[order(objF_1$rmse_b),][1:nrOfTargetConvPoints,]
 write.csv(targetConvObj, '../data/GLUE/onlyTropomiTrainAll_500.csv', row.names = F)
+

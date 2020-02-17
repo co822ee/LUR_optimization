@@ -1,7 +1,8 @@
 library(raster)
 
 # Raw data
-predictor_map <- raster("../data/raw_data/predictor_map/road_class_5_800.map")
+predictor_map <- raster("../data/predictor_normalize_area//cloneB.map")
+
 # Intermediate data for processing
 tropomiRaster_filepath <- '../data/TROPOMI_temis_laea/raster'   
 # Final data for the later modeling in PCRaster
@@ -18,3 +19,4 @@ lat=52.083333
 localProj <- crs(paste0(' +proj=laea +lon_0=', lon, ' +lat_0=', lat, 
                         ' +x_0=0 +y_0=0 +ellps=WGS84 +units=m +no_defs'))
 
+crs(predictor_map) <- localProj

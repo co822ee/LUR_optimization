@@ -14,7 +14,7 @@ os.chdir(abspath)             ## Setting up working directory
 inputFolder = '../data/TROPOMI_temis_laea'
 outputFolder = '../data/TROPOMI_temis_laea'
 
-setclone('../data/predictor_normalize_area/industry_100.map')
+setclone('../data/predictor_normalize_area/cloneB.map')
 
 train_scalar = readmap(os.path.join(inputFolder, 'scalar_train_25.map'))
 

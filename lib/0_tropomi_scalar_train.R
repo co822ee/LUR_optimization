@@ -20,4 +20,5 @@ boolean_ID25 <- projectRaster(boolean_ID12p5, predictor_map, method='ngb',
                               crs=localProj)
 # plot(boolean_ID12p5)
 # plot(boolean_ID25)
-writeRaster(boolean_ID25, paste0(tropomiFinal_filepath, "scalar_train_25.grd"))
+writeRaster(boolean_ID25, paste0(tropomiFinal_filepath, "/scalar_train_25.grd"))
+

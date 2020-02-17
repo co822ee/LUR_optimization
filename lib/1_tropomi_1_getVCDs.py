@@ -14,7 +14,7 @@ from pcraster.framework import *
 abspath = os.path.abspath('') ## String which contains absolute path to the script file
 os.chdir(abspath)             ## Setting up working directory
 
-setclone(os.path.join('../data/predictor_withoutMV/cloneB.map'))
+setclone(os.path.join('../data/predictor_normalize_area/cloneB.map'))
 tropomi = readmap('../data/TROPOMI_temis_laea/r_yrmean_na_12p5_25_ngb.map')
 tropomi_colRow_train = pandas.read_csv('../data/tropomiTrain_colrow.csv')
 tropomi_colRow_validate = pandas.read_csv('../data/tropomiValidate_colrow.csv')
