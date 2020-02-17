@@ -9,7 +9,7 @@ To save the user's time or due to some data that is irreproducible, some interme
 |txt files in GLUE/stochastic_01 & GLUE/stochastic_02|2_0_A_LURmodel_GLUE_stochastic_final.py|
 |tropomiTrain_colrow.csv & tropomiValidate_colrow.csv|1_tropomi_0_row_col.R|
 
-Because the script of producing tropomiTrainID.map & tropomiValidateID.map is lost, tropomiTrain_colrow.csv & tropomiValidate_colrow.csv are required, but  tropomiTrainID.map & tropomiValidateID.map are still available, and they're in the zip file: [tropomiID_map.zip][2]
+Because the script of producing tropomiTrainID.map & tropomiValidateID.map is lost, tropomiTrain_colrow.csv & tropomiValidate_colrow.csv are required to run the subsequent scripts, but  tropomiTrainID.map & tropomiValidateID.map are still available, and they're in the zip file: [tropomiID_map.zip][2]
 
 In addition, because we didn't set seed for generating parameter samples in  [2_0_A_LURmodel_GLUE_stochastic_final.py][3], it is also irreproducible, and therefore the corresponding results are provided in the folders of [GLUE/stochastic_01][4] & [GLUE/stochastic_02][5].
 
