@@ -1,6 +1,9 @@
 # This script visualizes the stochastic results from the 
 # A_LURmodel_PF_improve_validation_stochastic_final.py
-
+# Output file: objF_stochastic12.csv
+#              frontierTrainAll_500.csv
+#              onlySensorTrainAll_500.csv
+#              onlyTropomiTrainAll_500.csv
 
 library(dplyr)
 library(pbapply)
@@ -49,6 +52,7 @@ objF_1 <- base::merge(rmse_p, rmse_b,by=c("a","b","d","c"))
 objF_1 <- objF_1 %>% mutate(ID=1:nrow(objF_1))
 target <- objF_1 %>% filter(rmse_b<target_b&rmse_p<target_p)
 
+write.csv(objF_1, '../data/objF_stochastic12.csv', row.names = F)
 
 #------------ 3. Three calibration settings ----------------
 # 1) For considering both point and block
