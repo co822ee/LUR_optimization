@@ -79,7 +79,7 @@ class LURmodel(StaticModel, MonteCarloModel):
     b = 0.01 + mapuniform()*(1.2-0.01)              # x2  (0.01, 1.2)
     d = 0.001 + mapuniform()*(0.1-0.001)            # x3   (0.001,0.1)
     c = 12 + mapuniform()*(20-12)                   # intercep (12, 20)
-    h = 1.5 + mapuniform()*(3.0-1.5)                # tropomi ratio (1.5, 3.0)
+    h = 1.5 + mapuniform()*(3.0-1.5)                # column-to-surface ratio (1.5, 3.0)
     
     # LUR
     lur = c + a*self.x1 + b*self.x2 + d*self.x3
