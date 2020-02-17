@@ -9,8 +9,14 @@ To save the user's time or due to some data that is irreproducible, some interme
 |txt files in GLUE/stochastic_01 & GLUE/stochastic_02|2_0_A_LURmodel_GLUE_stochastic_final.py|
 |tropomiTrain_colrow.csv & tropomiValidate_colrow.csv|1_tropomi_0_row_col.R|
 
-Because the script of producing tropomiTrainID.map & tropomiValidateID.map is lost, tropomiTrain_colrow.csv & tropomiValidate_colrow.csv are required and the script 1_tropomi_0_row_col.R cann't be run unless the tropomiTrainID.map & tropomiValidateID.map are downloaded from [Google Drive][2].
+Because the script of producing tropomiTrainID.map & tropomiValidateID.map is lost, tropomiTrain_colrow.csv & tropomiValidate_colrow.csv are required, but  tropomiTrainID.map & tropomiValidateID.map are still available, and they're in the zip file: [tropomiID_map.zip][2]
+
+In addition, because we didn't set seed for generating parameter samples in  [2_0_A_LURmodel_GLUE_stochastic_final.py][3], it is also irreproducible, and therefore the corresponding results are provided in the folders of [GLUE/stochastic_01][4] & [GLUE/stochastic_02][5].
+
 
 
 [1]:https://github.com/co822ee/LUR_optimization/tree/master/data/raw_data
-[2]:
+[2]:https://github.com/co822ee/LUR_optimization/blob/master/data/TROPOMI_temis_laea/tropomiID_map.zip
+[3]:https://github.com/co822ee/LUR_optimization/blob/master/lib/2_0_A_LURmodel_GLUE_stochastic_final.py
+[4]:https://github.com/co822ee/LUR_optimization/tree/master/data/GLUE/stochastic_01
+[5]:https://github.com/co822ee/LUR_optimization/tree/master/data/GLUE/stochastic_02
