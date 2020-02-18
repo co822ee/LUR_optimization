@@ -1,5 +1,5 @@
 # Optimize LUR
-Land-use regression (LUR) for modelling nitrogen dioxide (NO2) is optimized through assimilating both ground-based observations (point data) and satellite observations (block data). The ground-based sensor data was collected from the [air quality e-reporting database website][1]. The TROPOMI VCDs were used and downloaded from the [Tropospheric Emission Monitoring Internet Service (TEMIS) website][2].
+Land-use regression (LUR) for modelling nitrogen dioxide (NO2) was optimized through assimilating both ground-based observations (point data) and satellite observations (block data). The ground-based sensor data was collected from the [air quality e-reporting database website][1]. The TROPOMI VCDs were used and downloaded from the [Tropospheric Emission Monitoring Internet Service (TEMIS) website][2].
 
 ## lib & data
 The [lib][3] folder contains the scripts for preprocessing, applying the Generalized Likelihood Uncertainty Estimation (GLUE), analyzing the uncertainty, and visualizing the results:
@@ -21,7 +21,7 @@ Due to various reasons, all the necessary preprocessed data created by the scrip
 |2_0_A_LURmodel_GLUE_stochastic_final.R|irreproducible because of the seeds|
 |3_0_A_Uncertainty_allStudyArea.py|the processing time(the script still can be run with the data provided here.) |
 
-If you're interested in accessing the raw raster maps of the predictor variables, they are available via the [Google Drive][6].
+If you're interested in accessing the raw raster maps of the predictor variables, they are available via the [Google Drive][6]. The size of the unzipped files are over 60GB.
 
 
 ### Acknowledgement
