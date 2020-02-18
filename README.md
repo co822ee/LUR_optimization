@@ -24,9 +24,15 @@ Due to various reasons, all the necessary preprocessed data created by the scrip
 If you're interested in accessing the raw raster maps of the predictor variables, they are available via the [Google Drive][6].
 
 
+### Acknowledgement
+This research is my thesis at Utrecht University. I would like to first thank my supervisors, [Prof. dr. Derek Karssenberg][7] and [Dr. Meng Lu][8]. Every meeting with them gave me a different perspective towards the research and encouraged me to think more thoroughly about the research questions. The programming bugs I encountered during the process were fixed after discussing with Derek and Meng. When writing the thesis, they both provided critical feedbacks to improve the content. I would like to thank [Dr. Oliver Schmitz][9] as well for providing the raster maps of the predictors and gave the technical support of modelling in the PCRaster framework. 
+
 [1]:https://www.eea.europa.eu/data-and-maps/data/aqereporting-8#tab-figures-produced
 [2]:http://www.temis.nl/
 [3]:https://github.com/co822ee/LUR_optimization/tree/master/lib
 [4]:https://github.com/co822ee/LUR_optimization/tree/master/data
 [5]:https://github.com/co822ee/LUR_optimization/tree/master/data.zip
 [6]:https://drive.google.com/drive/folders/1u2ALfjmXT67zdHi22DtZtJVWm6g7_Oax?usp=sharing
+[7]:https://www.uu.nl/staff/DJKarssenberg
+[8]:https://www.uu.nl/staff/mlu
+[9]:https://www.uu.nl/staff/OSchmitz/Research%20output
