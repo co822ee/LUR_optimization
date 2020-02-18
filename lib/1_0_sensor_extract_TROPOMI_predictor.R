@@ -10,6 +10,7 @@ library(dplyr)
 library(raster)
 library(gtools)
 library(pbapply)
+library(rgdal)
 
 # Input
 NO2p <- read.csv('../data/NO2_data.csv')
