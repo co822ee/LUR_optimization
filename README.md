@@ -1,7 +1,7 @@
 # Optimize LUR
 Land-use regression (LUR) for modelling nitrogen dioxide (NO2) is optimized through assimilating both ground-based observations (point data) and satellite observations (block data). The ground-based sensor data was collected from the [air quality e-reporting database website][1]. The TROPOMI VCDs were used and downloaded from the [Tropospheric Emission Monitoring Internet Service (TEMIS) website][2].
 
-## lib
+## lib & data
 The [lib][3] folder contains the scripts for preprocessing, applying the Generalized Likelihood Uncertainty Estimation (GLUE), analyzing the uncertainty, and visualizing the results:
 
 0. Preprocessing
@@ -9,7 +9,7 @@ The [lib][3] folder contains the scripts for preprocessing, applying the General
 2. GLUE
 3. Uncertainty analysis
 
-Due to various reasons, all the necessary preprocessed data created by the scripts is provided in the [data][4] folder. The clone map of the study area and the TROPOMI ID map can be found in [data.zip][5]. To run the scripts, which do not need the predictor maps, successfully, the data.zip need to be unzipped in the main directory.
+Due to various reasons, all the necessary preprocessed data created by the scripts is provided in the [data][4] folder. The clone map of the study area and the TROPOMI ID map can be found in [data.zip][5]. To run the scripts, except from the ones below, successfully, the data.zip need to be unzipped in the same directory.
 
 | script     | reason      |
 |--------------|-----------|
@@ -19,12 +19,14 @@ Due to various reasons, all the necessary preprocessed data created by the scrip
 |0_2_predictor_normalize.R| large size of the predictor maps|
 |1_0_sensor_extract_TROPOMI_predictor.R|large size of the predictor maps|
 |2_0_A_LURmodel_GLUE_stochastic_final.R|irreproducible because of the seeds|
-|3_0_A_Uncertainty_allStudyArea.py|the processing time|
+|3_0_A_Uncertainty_allStudyArea.py|the processing time(the script still can be run with the data provided here.) |
 
+If you're interested in accessing the raw raster maps of the predictor variables, they are available via the [Google Drive][6].
 
 
 [1]:https://www.eea.europa.eu/data-and-maps/data/aqereporting-8#tab-figures-produced
 [2]:http://www.temis.nl/
 [3]:https://github.com/co822ee/LUR_optimization/tree/master/lib
 [4]:https://github.com/co822ee/LUR_optimization/tree/master/data
-[5]:data.zip
+[5]:https://github.com/co822ee/LUR_optimization/tree/master/data.zip
+[6]:https://drive.google.com/drive/folders/1u2ALfjmXT67zdHi22DtZtJVWm6g7_Oax?usp=sharing
