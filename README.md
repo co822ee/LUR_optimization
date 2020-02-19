@@ -1,5 +1,5 @@
 # Optimize LUR
-Land-use regression (LUR) for modelling nitrogen dioxide (NO2) was optimized through assimilating both ground-based observations (point data) and satellite observations (block data). The ground-based sensor data was collected from the [air quality e-reporting database website][1]. The TROPOMI VCDs were used and downloaded from the [Tropospheric Emission Monitoring Internet Service (TEMIS) website][2].
+Land-use regression (LUR) for modelling nitrogen dioxide (NO2) was optimized through assimilating both ground-based observations (point data) and satellite observations (block data). The ground-based sensor data was collected from the [air quality e-reporting database website][1], provided by the European Environment Agency (EEA). The TROPOMI VCDs were used and downloaded from the [Tropospheric Emission Monitoring Internet Service (TEMIS) website][2], hosted by the Royal Netherlands Meteorological Institute (KNMI, Koninklijk Nederlands Meteorologisch Instituut).
 
 ## lib & data
 The [lib][3] folder contains the scripts for preprocessing, applying the Generalized Likelihood Uncertainty Estimation (GLUE), analyzing the uncertainty, and visualizing the results:
