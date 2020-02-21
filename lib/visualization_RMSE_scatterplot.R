@@ -1,6 +1,7 @@
 library(ggplot2)
 library(ggforce)
 library(dplyr)
+library(gridExtra)
 
 
 objF <- read.csv('../data/objF_stochastic12.csv', header=T)
