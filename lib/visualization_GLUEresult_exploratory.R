@@ -114,6 +114,61 @@ boxplot(all$road_class_1_500 ~ all$AirQualityStationType, col=gg_color_hue(3),
         ylab='road_class_1_500')
 boxplot(all$road_class_M345_5000 ~ all$AirQualityStationType, col=gg_color_hue(3), 
         ylab='road_M345_5000')
+#--- 0.2 visualization: scatterplot between TROPOMI VCDs and surface-level concentrations ---
+data_p <- read.csv('../data/data_laea_new_correctTropomi.csv')
+lm_eqn <- function(df, intercept=T){
+    if(intercept){
+        m <- lm(AQValue ~ tropomi, df);
+        eq <- substitute(italic(y) == b~"+"~a %.% italic(x)*","~~italic(R)^2~"="~r2, 
+                         list(a = format(unname(coef(m)[2]), digits = 2),
+                              b = format(unname(coef(m)[1]), digits = 2),
+                              r2 = format(summary(m)$adj.r.squared, digits = 2)))
+        return(as.character(as.expression(eq)))
+    }else{
+        m <- lm(AQValue ~ tropomi-1, df);
+        eq <- substitute(italic(y) == a %.% italic(x)*","~~italic(R)^2~"="~r2, 
+                         list(a = format(unname(coef(m)[1]), digits = 2),
+                              # b = format(unname(coef(m)[2]), digits = 2),
+                              r2 = format(summary(m)$adj.r.squared, digits = 2)))
+        return(as.character(as.expression(eq)))
+    }
+    
+    
+}
+data_p_background <- data_p %>% filter(AirQualityStationType=='background')
+
+ggplot()+
+    geom_point(data=data_p, aes(x=tropomi, y=AQValue, 
+                                color=AirQualityStationType))+
+    geom_smooth(data=data_p, aes(x=tropomi, y=AQValue),formula = y~x-1, 
+                method='lm', fullrange=TRUE, col='red', se=F)+
+    geom_smooth(data=data_p_background, aes(x=tropomi, y=AQValue),formula = y~x-1, 
+                method='lm', fullrange=TRUE, col='blue', se=F)+
+    geom_smooth(data=data_p, aes(x=tropomi, y=AQValue),formula = y~x, 
+                method='lm', fullrange=TRUE, col='black', se=F)+
+    xlab(paste0("tropospheric column density \n", 
+                "(1e15 molecules/cm2)"))+
+    ylab(paste0("surface NO2 concentration", "\n (ug.m-3)"))+
+    labs(color = "Station type")+
+    annotate(geom = 'text', label = lm_eqn(data_p, F), 
+             size=6, col='red',
+             x = -Inf, y = Inf, hjust = -0.06, vjust = 2.2, parse = TRUE)+
+    annotate(geom = 'text', label = lm_eqn(data_p_background, F), 
+             size=6, col='blue',
+             x = -Inf, y = Inf, hjust = -0.06, vjust = 3.2, parse = TRUE)+
+    
+    annotate(geom = 'text', label = lm_eqn(data_p), 
+             size=6, col='black',
+             x = -Inf, y = Inf, hjust = -0.06, vjust = 1.2, parse = TRUE)+
+    
+    xlim(c(0,8))+
+    ylim(c(0, 55))+
+    theme(axis.title = element_text(size = 18),
+          axis.text = element_text(size = 16),
+          legend.title = element_text(size = 16),
+          legend.text = element_text(size = 16))
+ggsave('../graphs/correlation_VCD_groundconc.tiff', height=5, width=6.5, units='in', dpi=600)
+
 
 #------------------ 1.1 Visualization: correlation --------------
 tiff("../graphs/O_glue_corPlot_onlySensor.tiff", height=5, width=5, units='in', res=600)
