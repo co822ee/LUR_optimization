@@ -3,6 +3,8 @@ library(gtools)
 
 outputFilePath <- '../data/GLUE/evaluation_allOutputData/'
 
+if(!(file.exists(outputFilePath))){dir.create(outputFilePath)}
+
 
 sensor_validation <- read.csv('../data/sensorValidateData_all.csv',header=T)
 sensor_train <- read.csv('../data/sensorTrainData_all.csv',header=T)
