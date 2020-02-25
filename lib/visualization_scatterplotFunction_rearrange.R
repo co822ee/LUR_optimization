@@ -179,7 +179,7 @@ ScatterPlotsWithDefinedSampleSize_m <- function(ensPredictions, observations,
             geom_abline(intercept = 0, slope = 1,lty=2,lwd=1)+
             labs(title=titleTexts, 
                  x=expression(predicted(10^15~molecules/cm^2)),
-                 y=expression(observed~(ug/m^2)))+
+                 y=expression(observed~(10^15~molecules/cm^2)))+
             theme(strip.text = element_text(size=17), 
                   axis.text.x = element_text(size=15), 
                   axis.text.y = element_text(size=15),
