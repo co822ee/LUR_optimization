@@ -26,6 +26,7 @@ writeRaster(boolean_ID25, paste0(tropomiFinal_filepath, "/scalar_train_25.grd"))
 source('set_tropomi.R')
 library(tmap)
 library(rgdal)
+library(sf)
 library(dplyr)
 boolean_ID25 <- raster(paste0(tropomiFinal_filepath, '/scalar_train_25.grd'))
 
@@ -45,8 +46,8 @@ adm_laea_c <- crop(adm_laea, boolean_ID25)
 locations_sf = st_as_sf(data_p, coords = c("Longitude.laea","Latitude.laea"), crs=localProj)
 
 tmap_mode('plot')
-tm_shape(boolean_ID25)+
-    tm_raster(palette=c('#42f572', '#f5f231'), style = "cat", 
+tmPlot <- tm_shape(boolean_ID25)+
+    tm_raster(style = "cat", palette = c('#edc61a', '#18cc81'),
               title = 'TROPOMI')+
     
     tm_shape(locations_sf) +
@@ -56,7 +57,10 @@ tm_shape(boolean_ID25)+
     
     tm_shape(adm_laea_c) +
     tm_borders(col='black')+
-    tm_scale_bar(text.size=1, text.color='white', position = c('center','top'))+
+    tm_scale_bar(text.size=1, text.color='black', position = c('center','top'))+
     tm_compass(text.size = 0.6, position = c('right','top'))+
-    tm_layout(legend.title.size = 1.2, legend.text.size = 1, legend.text.color = 'black')
+    tm_layout(legend.title.size = 1.2, legend.text.size = 1, attr.outside = T,
+              legend.outside = T, legend.outside.position = c('left','top'))
 
+tmap_save(tmPlot, filename = '../graphs/train_boolean.tiff', 
+          dpi=600, height=5, width=4, units='in')
