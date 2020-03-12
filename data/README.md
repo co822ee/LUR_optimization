@@ -1,6 +1,6 @@
 # Data
 This folder contains both raw data [(raw_data)][1] of both sensor data and TROPOMI data. 
-To save the user's time or due to some data that is irreproducible, some intermediate data is already included and is shown in the table below:
+To save the user's time or due to some data that is irreproducible, some intermediate data for scripts is already included and is shown in the table below:
 | data               | script       |
 |------------------- |------------|
 |NO2_data.csv        |0_sensor_preprocess_data.R |
