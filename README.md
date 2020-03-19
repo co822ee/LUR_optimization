@@ -9,7 +9,7 @@ The [lib][3] folder contains the scripts for preprocessing, applying the General
 2. GLUE
 3. Uncertainty analysis
 
-Due to various reasons, all the necessary preprocessed data created by the scripts is provided in the [data][4] folder. The clone map of the study area and the TROPOMI ID map can be found in [data.zip][5]. To run the scripts, except from the ones below, successfully, the data.zip need to be unzipped in the same directory.
+Due to various reasons, all the necessary preprocessed data created by the scripts is provided in the [data][4] folder. The clone map of the study area and the TROPOMI ID map can be found in [data.zip][5]. To run the scripts, except from the ones below, successfully, the data.zip need to be unzipped in the data directory.
 
 | script     | reason      |
 |--------------|-----------|
