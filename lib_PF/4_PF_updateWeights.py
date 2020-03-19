@@ -53,31 +53,6 @@ class LURmodel(DynamicModel, MonteCarloModel, ParticleFilterModel):
     ParticleFilterModel.__init__(self)
     setclone(os.path.join('../data/predictor_normalize_area/cloneB.map'))
 
-  def readmapbypath(self, filename):
-    return readmap(os.path.join('../data/predictor_normalize_area/',filename))
-
-  def generateNameTxt(self, filename, sampleNumber):
-    return scenario+'/'+filename+"_" + str(sampleNumber) +".txt"
-
-  def checkTxt(self, index):
-    return os.path.isfile(scenario + "/" + 'lur_tropomi_train' + "_{}.txt".format(index))&os.path.isfile(
-            scenario + "/" + 'lur_sensor_train' + "_{}.txt".format(index))&os.path.isfile(
-            scenario + "/" + 'lur_tropomi_validate' + "_{}.txt".format(index))&os.path.isfile(
-            scenario + "/" + 'lur_sensor_validate' + "_{}.txt".format(index))
-    
-  def pcr_coord(self,xcoord, ycoord):
-     """ this only works for known projection type and angle... """
-     west = pcraster.clone().west()
-     north = pcraster.clone().north()
-     cellSize = pcraster.clone().cellSize()
-
-     xCol = (xcoord - west) / cellSize
-     yRow = (north - ycoord) / cellSize
-     
-     # The getCellValue() starts from 1, so 1 should be added to the col and row variables.
-     col  = int(math.floor(xCol))+1
-     row  = int(math.floor(yRow))+1
-     return row, col
 
   def premcloop(self):
     #------- Read observation values and variance of measurement errors (tropomi & sensor) ----------
