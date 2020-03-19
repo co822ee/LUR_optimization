@@ -23,6 +23,8 @@ Due to various reasons, all the necessary preprocessed data created by the scrip
 
 If you're interested in accessing the raw raster maps of the predictor variables, they are available via the [Google Drive][6]. The size of the unzipped files are over 60GB.
 
+## lib_PF
+The lib_PF folder contains the scripts for running particle filter technique. Part of the scripts can be run without running the preprocessing scripts in the lib folder. For more information, please see the README.md in lib_PF.
 
 ### Acknowledgement
 This research is my thesis at Utrecht University. I would like to first thank my supervisors, [Prof. dr. Derek Karssenberg][7] and [Dr. Meng Lu][8]. Every meeting with them gave me a different perspective towards the research and encouraged me to think more thoroughly about the research questions. The programming bugs I encountered during the process were fixed after discussing with Derek and Meng. They both provided critical feedbacks to improve the content of the thesis. I would like to thank [Dr. Oliver Schmitz][9] as well for providing the raster maps of the predictors and giving the technical support for modelling in the PCRaster framework. 
